@@ -1,0 +1,101 @@
+:root {
+    --main-blue-color: #00bde3;
+    --main-dark-gray-color: #0f0f0f;
+    --main-white-color: #f9f9f9;
+    --main-font-family: 'Chakra Petch', sans-serif;
+    --h3-font-family: 'Lato';
+    --p-font-family: 'Proxima Nova';
+  }
+
+.landingPage{
+    width: 100vw;
+    height: 100vh;
+    background-image: url('../../assets/backgroundhacker.jpg');
+    background-size: cover; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-y: auto;
+}
+
+.sectionTextLandingPage{
+    width:76vw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.sectionTextLandingPage h1{
+    font-family: var(--h3-font-family);
+    font-size:50px;
+    width: 32%;
+    color: var(--main-white-color);
+    
+    line-height: 0.9;
+}
+
+.sectionTextLandingPage p{
+    font-family: var(--p-font-family);
+    color: #e6e6e6;
+    width: 32%;
+    font-weight: 300;
+    line-height: 1.2;
+    font-size: 1.2rem;
+    font-weight: 100;
+    margin: 25px 0;
+    text-align: justify;
+}
+
+.sectionTextLandingPage button{
+    width: 310px;
+    height: 60px;
+    background-color: transparent;
+    border: 2px solid var(--main-blue-color);
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: var(--main-blue-color);
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+.sectionTextLandingPage button:hover{
+    color: var(--main-white-color);
+    transform: scale(1.1);
+}
+
+@media screen and (max-width:768px){
+    .sectionTextLandingPage{
+        width: 90%;
+        justify-content: center;
+    }
+    .sectionTextLandingPage h1{
+        width: 100%;
+        font-size: 3rem;
+    }
+    .sectionTextLandingPage p{
+        width: 100%;
+        text-align: justify;
+    }
+    .sectionTextLandingPage button{
+        align-self: center;
+    }
+}
+@media screen and (max-width:348px){
+.landingPage{
+    margin-top: 80px;
+}
+.landingPage h1 {
+    font-size: 30px;
+}
+.landingPage p {
+    font-size: 17px;
+}
+.sectionTextLandingPage button{
+    width: 210px;
+    height: 50px;
+    font-size: 12px;
+}
+
+}
