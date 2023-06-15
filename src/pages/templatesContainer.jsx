@@ -1,5 +1,5 @@
 import { useState } from "react";
-
+import { Link } from 'react-router-dom';
 function TemplatesContainer({ imagem1, imagem2, title1, title2 }) {
   const [modalIsOpen, setModalIsOpen] = useState(false);
   const [exibir, setExibir] = useState(false);
@@ -75,7 +75,9 @@ function TemplatesContainer({ imagem1, imagem2, title1, title2 }) {
                   </p>
                 </div>
                 
-                <button>Garantir esse template</button>
+                <Link style={{ textDecoration: 'none' }} to="/"><button onClick={ () => {
+                           window.scrollBy(0, 2200);
+                        }}>Garantir este template</button></Link>
               </div>
               <div className="explicativo--image">
               <img src={imagem1} alt="Imagem 1" />
@@ -117,7 +119,9 @@ function TemplatesContainer({ imagem1, imagem2, title1, title2 }) {
                   </p>
                 </div>
                 
-                <button>Garantir esse template</button>
+                <Link style={{ textDecoration: 'none' }} to="/"><button onClick={ () => {
+                           window.scrollBy(0, 2200);
+                        }}>Garantir este template</button></Link>
               </div>
               <div className="explicativo--image">
               <img src={imagem2} alt="Imagem 1" />

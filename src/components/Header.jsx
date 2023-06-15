@@ -1,6 +1,7 @@
 import './stylesComponents/header.css'
 import '../app.css'
 import setinha from '../assets/setaPracima.png'
+import { Link } from 'react-router-dom';
 
 function Header(props) {
 
@@ -26,13 +27,13 @@ function Header(props) {
     </div>
     <div className="caixa_menu">
       <div className="oneList">
-        <button onClick={props.functionScrollToAcessoria}>Acessoria ao cliente</button>
-        <button>Todos projetos</button>
+<Link  style={{ textDecoration: 'none' }} to="/"><button onClick={props.functionScrollToAcessoria}>Acessoria ao cliente</button></Link>
+         <Link style={{ textDecoration: 'none' }} to="/templates"><button>Todos projetos</button></Link>
       </div>
        <h1 id="quartoAndarLogo-Desktop">Quarto Andar</h1>
        <div className="twoList">
-        <button>Contatos</button>
-        <button>Nossos desenvolvedores</button>
+        <Link  style={{ textDecoration: 'none' }} to="/"> <button>Contatos</button></Link>
+        <Link style={{ textDecoration: 'none' }} to="/"><button>Nossos desenvolvedores</button></Link>
       </div>
     </div>
     <button id="menuMobile_icone" onClick={handleClick}> 
@@ -43,10 +44,10 @@ function Header(props) {
     </header>
     <div className="menuMobile" id="menu">
       <button>Quarto Andar</button>
-      <button onClick={props.functionScrollToAcessoria}>Acessoria ao cliente</button>
-      <button>Todos projetos</button>
-      <button>Contatos</button>
-      <button>Nossos Desenvolvedores</button>
+      <Link  style={{ textDecoration: 'none' }} to="/"><button onClick={props.functionScrollToAcessoria}>Acessoria ao cliente</button></Link>
+      <Link style={{ textDecoration: 'none' }} to="/templates"><button>Todos projetos</button></Link>
+      <Link  style={{ textDecoration: 'none' }} to="/"> <button>Contatos</button></Link>
+      <Link style={{ textDecoration: 'none' }} to="/"><button>Nossos desenvolvedores</button></Link>
     </div>
     </div>
   )
