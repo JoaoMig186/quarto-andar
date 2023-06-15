@@ -26,9 +26,9 @@ class Acessoria extends React.Component{
             if (response.ok){
                 this.pesquisarClient();
             } 
-            // else {
-            //     alert("Erro. Cliente não foi cadastrado, tente novamente.");
-            // }
+            else {
+                 alert("Erro. Cliente não foi cadastrado, tente novamente.");
+            }
         })
         }
     }

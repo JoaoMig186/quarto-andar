@@ -1,6 +1,7 @@
 import Acessoria from "../pages/Acessoria"
 import CardsBox from "../pages/CardsBox"
 import LandingPage from "../pages/LandingPage"
+import SobreNos from "../pages/SobreNos"
 import './stylesComponents/main.css'
 
 function Main() {
@@ -17,6 +18,7 @@ function Main() {
   return (
     <main className="main">
         <LandingPage functionScrollToCards={scrollToCards}/> 
+        <SobreNos/>
         <CardsBox/>
         <Acessoria/>
     </main>

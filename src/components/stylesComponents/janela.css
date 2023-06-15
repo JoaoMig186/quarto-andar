@@ -1,0 +1,87 @@
+:root {
+    --main-blue-color: #00bde3;
+    --main-dark-gray-color: #0f0f0f;
+    --main-white-color: #f9f9f9;
+    --main-font-family: 'Chakra Petch', sans-serif;
+    --h3-font-family: 'Lato';
+    --p-font-family: 'Proxima Nova';
+  }
+
+.window {
+    width: 420px;
+    height: 420px;
+    background-color: #2c3e50;
+    border-radius: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.3);
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .window .text-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 60px;
+    padding-right: 10px;
+  }
+
+  .window .text-content h3{
+    align-self: start;
+    font-size: 25px;
+    margin-bottom: 20px;
+    color: var(--main-white-color);
+  }
+
+  .window .text-content p{
+    text-align: justify;
+    font-size: 18px;
+    color: var(--main-white-color);
+  }
+
+  .window .text-content img{
+    width: 200px;
+    border-radius: 15px;
+    margin-top: 15px;
+  }
+  
+  .glass {
+    width: 400px;
+    height: 400px;
+    border-radius: 10px;
+    overflow: hidden;
+    backdrop-filter: blur(8px);
+    background: rgba(255, 255, 255, 0.09);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    position: absolute;
+    z-index: 1;
+    top: 10px;
+    left: 10px;
+    transition: all .5s;
+  }
+
+  .holder{
+    width: 40px;
+    height: 80px;
+    background-color: #000;
+    border-radius: 8px;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .window:hover .glass{
+    width: 45px;
+  }
+  
+  
+  

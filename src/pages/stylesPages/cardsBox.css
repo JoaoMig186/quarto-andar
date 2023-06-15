@@ -10,15 +10,8 @@
     align-items: center;
     flex-direction: column;
     width: 100vw;
-    height: 100vh;
-    background: radial-gradient(rgb(19, 30, 37) 24.5%, rgb(19, 30, 37) 66%);
-}
-
-.section_cardsBox h2{
-    font-family: var(--main-font-family);
-    color: var(--main-white-color);
-    font-size: 35px;
-    margin-bottom: 49.9px;
+    height: 50vh;
+    background-color: var(--main-blue-color);
 }
 
 .container_cardBox{
