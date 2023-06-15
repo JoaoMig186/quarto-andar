@@ -22,7 +22,7 @@ function PageTemplates() {
                         Não tem certeza em qual modelo escolher? Não se preocupe fale com nossa acessoria <button>Acessoria</button>
                     </h3>
             </header>
-            <TemplatesContainer imagem1={imagem1} imagem2={imagem3} title1='lading andamento' title2='viacar'/>
+            <TemplatesContainer imagem1={imagem1} imagem2={imagem3} title1='lading andamento' title2='viacar' />
             <TemplatesContainer imagem1={imagem2} imagem2={imagem4} title1='loja eletronica' title2='loja virtual'/>
             <TemplatesContainer imagem1={imagem1} imagem2={imagem3} title1='lading andamento' title2='viacar'/>
             <TemplatesContainer imagem1={imagem2} imagem2={imagem4} title1='loja eletronica' title2='loja virtual'/>
