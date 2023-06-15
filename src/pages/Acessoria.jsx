@@ -99,7 +99,7 @@ class Acessoria extends React.Component{
                         <div className="boxForm-Form">
                             <h4>Preencha suas informações descrevendo seu projeto e entraremos em contato!</h4>
                                 <form onSubmit={ (event) =>{
-                                    swal(`Obrigado ${this.state.nome}. Sua requisição de acessoria foi feita, em breve retornaremos em seu e-mail ou número para abordarmos sobre eu projeto!`)
+                                    swal(`Obrigado ${this.state.nome}. Sua requisição enviada!`)
                                     event.preventDefault();
 
                                     var input1 = document.querySelector("#nome")
@@ -113,7 +113,6 @@ class Acessoria extends React.Component{
                                     input3.value = ""
                                     input4.value = ""
                                     input5.value = ""
-
                                     
                                 }}> 
                                     <span>Seu nome:</span>
