@@ -17,10 +17,12 @@ function Main() {
     
   return (
     <main className="main">
+        
         <LandingPage functionScrollToCards={scrollToCards}/> 
         <SobreNos/>
         <CardsBox/>
         <Acessoria/>
+        
     </main>
   )
 }

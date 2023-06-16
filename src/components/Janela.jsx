@@ -1,4 +1,5 @@
 import './stylesComponents/janela.css'
+import Image4andar from '../assets/4andar.jpeg'
 
 export default function Janela(props){
     return(

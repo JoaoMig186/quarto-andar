@@ -4,6 +4,7 @@ import './stylesPages/cardsBox.css'
 function CardsBox(){
     return(
         <div className="section_cardsBox">   
+        <h2>Benefícios conosco -></h2>
                 <div className="container_cardBox">
                     <Card 
                         titulo={"REDES SOCIAIS"} 

@@ -27,7 +27,7 @@
 }
 
 .sectionTextLandingPage h1{
-    font-family: var(--h3-font-family);
+    font-family: Arial, Helvetica, sans-serif;
     font-size:50px;
     width: 32%;
     color: var(--main-white-color);
@@ -36,52 +36,98 @@
 }
 
 .sectionTextLandingPage p{
-    font-family: var(--p-font-family);
+    font-family: Arial, Helvetica, sans-serif;
     color: #e6e6e6;
     width: 32%;
     font-weight: 300;
-    line-height: 1.2;
-    font-size: 1.2rem;
+    letter-spacing: -0.1px;
+    line-height: 1.3;
+    font-size: 1.3rem;
     font-weight: 100;
     margin: 25px 0;
     text-align: justify;
 }
 
-.sectionTextLandingPage button{
-    width: 310px;
-    height: 60px;
-    background-color: transparent;
-    border: 2px solid var(--main-blue-color);
-    border-radius: 5px;
-    font-size: 14px;
-    font-weight: bold;
-    text-transform: uppercase;
-    color: var(--main-blue-color);
-    transition: all 0.3s ease;
-    cursor: pointer;
-}
-.sectionTextLandingPage button:hover{
-    color: var(--main-white-color);
-    transform: scale(1.1);
+@media screen and (max-width:1350px){
+    .sectionTextLandingPage h1{
+        font-size: 2rem;
+    }
 }
 
-@media screen and (max-width:768px){
+@media screen and (max-width:1280px){
+    .sectionTextLandingPage{
+        width: 80%;
+        justify-content: center;
+    }
+    .sectionTextLandingPage h1{
+        font-size: 2rem;
+    }
+    .sectionTextLandingPage p{
+        font-size: 1.3rem;
+    }
+}
+
+@media screen and (max-width:1000px){
     .sectionTextLandingPage{
         width: 90%;
         justify-content: center;
     }
     .sectionTextLandingPage h1{
+        width: 45%;
+        font-size: 2rem;
+    }
+    .sectionTextLandingPage p{
+        width: 45%;
+        font-size: 1.3rem;
+    }
+}
+
+@media screen and (max-width:900px){
+    .sectionTextLandingPage{
+        width: 90%;
+        justify-content: center;
+    }
+    .sectionTextLandingPage h1{
+        width: 45%;
+    }
+    .sectionTextLandingPage p{
+        width: 45%;
+    }
+}
+
+@media screen and (max-width:768px){
+    .landingPage{
+        height: auto;
+        margin-bottom: 50px;
+    }
+    .sectionTextLandingPage{
+        width: 90%;
+        justify-content: center;
+    }
+    .sectionTextLandingPage h1{
+        margin-top: 100px;
         width: 100%;
-        font-size: 3rem;
+        font-size:35px;
+        padding: 10px;
     }
     .sectionTextLandingPage p{
         width: 100%;
+        font-size: 20px;
+        padding: 10px;
         text-align: justify;
+        color: #fff;
     }
     .sectionTextLandingPage button{
         align-self: center;
+        transform: scale(0.9);
     }
 }
+@media screen and (max-width:500px){
+    .landingPage{
+        background-image: none;
+    }
+}
+
 @media screen and (max-width:348px){
 .landingPage{
     margin-top: 80px;

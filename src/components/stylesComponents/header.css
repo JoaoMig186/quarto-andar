@@ -2,7 +2,6 @@
     --main-blue-color: #00bde3;
     --main-dark-gray-color: #0f0f0f;
     --main-white-color: #f9f9f9;
-    --main-font-family: 'Chakra Petch', sans-serif;
   }
 
 #backToTop{
@@ -56,7 +55,7 @@
 }
 
 h1{
-    font-family: var(--main-font-family);
+    font-family: 'Chakra Petch', sans-serif;
     color: var(--main-white-color);
     font-size: 40px;
     font-weight: 900;
@@ -67,7 +66,7 @@ h1{
 
 .oneList button, .twoList button {
     background-color: transparent;
-    font-family: var(--main-font-family);
+    font-family: Arial, Helvetica, sans-serif;
     border: none;
     color: var(--main-white-color);
     font-size: 1.0rem;
@@ -76,13 +75,13 @@ h1{
 }
 
 .oneList button:hover::after, .twoList button:hover::after {
-    content: ''; /* adiciona conteúdo vazio após o link */
-    display: block; /* define como bloco */
-    position: absolute; /* define a posição absoluta em relação ao link */
-    width: 2%; /* define a largura como 100% do link */
-    height: 2px; /* define a altura da linha */
-    bottom: 10; /* posiciona a linha na parte inferior do link */
-    background-color: var(--main-white-color); /* define a cor da linha */
+    content: ''; 
+    display: block; 
+    position: absolute; 
+    width: 2%; 
+    height: 2px; 
+    bottom: 10; 
+    background-color: var(--main-white-color); 
     
   }
 
@@ -185,7 +184,13 @@ h1{
     border-bottom: none;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width:1280px){
+    h1{
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 900px) {
     .header{
         position: fixed;
     }
