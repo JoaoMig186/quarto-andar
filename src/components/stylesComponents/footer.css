@@ -70,14 +70,13 @@
     
 }
 .card_footer{
-    
-    height: 200px;
-        width: 100%;
-        border: 2px solid var(--main-blue-color);
-        border-radius: 8px;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        padding: 16px;
-        background-color:  var(--main-blue-color);
+    height: 180px;
+    width: 100%;
+    border: 2px solid var(--main-blue-color);
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 16px;
+    background-color:  var(--main-blue-color);
       
 }
 .card-f button {
@@ -101,7 +100,7 @@
 }
 .card_footer img {
     width: 100%;
-    height: 140px;
+    height: 120px;
 }
 .footer_3{
     display: flex;

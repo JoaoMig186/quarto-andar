@@ -1,5 +1,7 @@
 import { useState } from "react";
 import { Link } from 'react-router-dom';
+import Button from "../components/Button";
+
 function TemplatesContainer({ imagem1, imagem2, title1, title2 }) {
   const [modalIsOpen, setModalIsOpen] = useState(false);
   const [exibir, setExibir] = useState(false);
@@ -55,29 +57,13 @@ function TemplatesContainer({ imagem1, imagem2, title1, title2 }) {
                     exercitationem. Dicta optio tempora quisquam autem reprehenderit esse reiciendis ullam natus,
                     consequuntur eligendi corporis rem porro!
                   </p>
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam cumque voluptate nisi id, ipsum dolorem
-                    earum quisquam quam illo odio recusandae reprehenderit ex quae dignissimos est alias ad ea eligendi!
-                  </p>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque quae adipisci itaque expedita magni
-                    maiores id eligendi voluptatum et iusto obcaecati quibusdam impedit, quam sed excepturi iste porro
-                    suscipit quidem.
-                  </p>
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, illum non debitis possimus corporis
-                    exercitationem. Dicta optio tempora quisquam autem reprehenderit esse reiciendis ullam natus,
-                    consequuntur eligendi corporis rem porro!
-                  </p>
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam cumque voluptate nisi id, ipsum dolorem
-                    earum quisquam quam illo odio recusandae reprehenderit ex quae dignissimos est alias ad ea eligendi!
-                  </p>
                 </div>
                 
-                <Link style={{ textDecoration: 'none' }} to="/"><button onClick={ () => {
+                <Link style={{ textDecoration: 'none' }} to="/">
+                  <Button width="200px" heigth="50px" textoBtn="Garantir este template" onClick={ () => {
                            window.scrollBy(0, 2148);
-                        }}>Garantir este template</button></Link>
+                        }}/>
+                  </Link>
               </div>
               <div className="explicativo--image">
               <img src={imagem1} alt="Imagem 1" />
@@ -99,29 +85,14 @@ function TemplatesContainer({ imagem1, imagem2, title1, title2 }) {
                     exercitationem. Dicta optio tempora quisquam autem reprehenderit esse reiciendis ullam natus,
                     consequuntur eligendi corporis rem porro!
                   </p>
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam cumque voluptate nisi id, ipsum dolorem
-                    earum quisquam quam illo odio recusandae reprehenderit ex quae dignissimos est alias ad ea eligendi!
-                  </p>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque quae adipisci itaque expedita magni
-                    maiores id eligendi voluptatum et iusto obcaecati quibusdam impedit, quam sed excepturi iste porro
-                    suscipit quidem.
-                  </p>
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, illum non debitis possimus corporis
-                    exercitationem. Dicta optio tempora quisquam autem reprehenderit esse reiciendis ullam natus,
-                    consequuntur eligendi corporis rem porro!
-                  </p>
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam cumque voluptate nisi id, ipsum dolorem
-                    earum quisquam quam illo odio recusandae reprehenderit ex quae dignissimos est alias ad ea eligendi!
-                  </p>
                 </div>
                 
-                <Link style={{ textDecoration: 'none' }} to="/"><button onClick={ () => {
+                <Link style={{ textDecoration: 'none' }} to="/">
+                  <button onClick={ () => {
                            window.scrollBy(0, 2148);
-                        }}>Garantir este template</button></Link>
+                        }}>Garantir este template
+                        </button>
+                </Link>
               </div>
               <div className="explicativo--image">
               <img src={imagem2} alt="Imagem 1" />
