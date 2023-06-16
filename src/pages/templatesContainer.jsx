@@ -76,7 +76,7 @@ function TemplatesContainer({ imagem1, imagem2, title1, title2 }) {
                 </div>
                 
                 <Link style={{ textDecoration: 'none' }} to="/"><button onClick={ () => {
-                           window.scrollBy(0, 2200);
+                           window.scrollBy(0, 2148);
                         }}>Garantir este template</button></Link>
               </div>
               <div className="explicativo--image">
@@ -120,7 +120,7 @@ function TemplatesContainer({ imagem1, imagem2, title1, title2 }) {
                 </div>
                 
                 <Link style={{ textDecoration: 'none' }} to="/"><button onClick={ () => {
-                           window.scrollBy(0, 2200);
+                           window.scrollBy(0, 2148);
                         }}>Garantir este template</button></Link>
               </div>
               <div className="explicativo--image">
