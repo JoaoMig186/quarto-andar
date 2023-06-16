@@ -208,5 +208,8 @@ h1{
         background-color: var(--main-white-color);
         justify-content: space-between;
     }
+    .menuMobile button {
+        width: 100%;
+    }
 }
 

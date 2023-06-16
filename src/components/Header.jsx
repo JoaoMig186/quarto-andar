@@ -28,12 +28,12 @@ function Header(props) {
     <div className="caixa_menu">
       <div className="oneList">
 <Link  style={{ textDecoration: 'none' }} to="/"><button onClick={props.functionScrollToAcessoria}>Acessoria ao cliente</button></Link>
-         <Link style={{ textDecoration: 'none' }} to="/templates"><button>Todos projetos</button></Link>
+         <Link style={{ textDecoration: 'none' }} to="/templates"><button>Templates</button></Link>
       </div>
        <h1 id="quartoAndarLogo-Desktop">Quarto Andar</h1>
        <div className="twoList">
-        <Link  style={{ textDecoration: 'none' }} to="/"> <button>Contatos</button></Link>
-        <Link style={{ textDecoration: 'none' }} to="/"><button>Nossos desenvolvedores</button></Link>
+        <Link  style={{ textDecoration: 'none' }} to="/"> <button onClick={props.functionScrollToAcessoria}>Contatos</button></Link>
+        <Link style={{ textDecoration: 'none' }} to="/"><button onClick={props.functionScrollTodev}>Nossos desenvolvedores</button></Link>
       </div>
     </div>
     <button id="menuMobile_icone" onClick={handleClick}> 
@@ -45,9 +45,9 @@ function Header(props) {
     <div className="menuMobile" id="menu">
       <button>Quarto Andar</button>
       <Link  style={{ textDecoration: 'none' }} to="/"><button onClick={props.functionScrollToAcessoria}>Acessoria ao cliente</button></Link>
-      <Link style={{ textDecoration: 'none' }} to="/templates"><button>Todos projetos</button></Link>
-      <Link  style={{ textDecoration: 'none' }} to="/"> <button>Contatos</button></Link>
-      <Link style={{ textDecoration: 'none' }} to="/"><button>Nossos desenvolvedores</button></Link>
+      <Link style={{ textDecoration: 'none' }} to="/templates"><button>Templates</button></Link>
+      <Link  style={{ textDecoration: 'none' }} to="/"> <button onClick={props.functionScrollToAcessoria}>Contatos</button></Link>
+      <Link style={{ textDecoration: 'none' }} to="/"><button onClick={props.functionScrollTodev}>Nossos desenvolvedores</button></Link>
     </div>
     </div>
   )

@@ -22,7 +22,14 @@ function ContainerGrid() {
           behavior: 'smooth' 
     });
     }
-
+    function functionScrollTodev() {
+      var elem = document.querySelector(".footer");
+      window.scroll({
+            top: elem.offsetTop, 
+            left: 0, 
+            behavior: 'smooth' 
+      });
+    }
     function functionScrollToAcessoria(){
       var elem = document.querySelector(".div-form");
       window.scroll({
@@ -36,6 +43,7 @@ function ContainerGrid() {
     <div className="container_grid">
       <Header functionScrollTop={scrollTop}
               functionScrollToAcessoria={functionScrollToAcessoria}
+              functionScrollTodev={functionScrollTodev}
       />
       <Main/>
       <Footer/>
