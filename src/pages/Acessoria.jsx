@@ -26,9 +26,6 @@ class Acessoria extends React.Component{
             if (response.ok){
                 this.pesquisarClient();
             } 
-            else {
-                 alert("Erro. Cliente não foi cadastrado, tente novamente.");
-            }
         })
         }
     }
@@ -97,8 +94,8 @@ class Acessoria extends React.Component{
                             <img src={imgform}/>
                         </div>
                         <div className="boxForm-Form">
-                            <h4>Preencha suas informações descrevendo seu projeto e entraremos em contato!</h4>
                                 <form onSubmit={ (event) =>{
+                                    this.saveDatas();
                                     swal(`Obrigado ${this.state.nome}. Sua requisição enviada!`)
                                     event.preventDefault();
 
@@ -120,12 +117,12 @@ class Acessoria extends React.Component{
                                     <span>Nome da empresa:</span>
                                     <input className="inputClass" type="text" id="nomeEmpresa" placeholder="Caso não tenha, pode deixar em branco." onChange={this.nomeEmpresaSaving}/>
                                     <span>Seu e-mail:</span>
-                                    <input className="inputClass" type="text" id="email" required onChange={this.emailSaving}/>
+                                    <input className="inputClass" type="email" id="email" required onChange={this.emailSaving}/>
                                     <span>Seu número com DDD:</span>
-                                    <input className="inputClass" type="number" id="num" required onChange={this.numeroSaving}/>
+                                    <input className="inputClass" type="number" minLength={11} maxLength={12} id="num" required onChange={this.numeroSaving}/>
                                     <span>Nos conte um pouco sobre o projeto:</span>
                                     <textarea className="inputClass" placeholder='De uma descrição detalhada da sua empresa, projeto ou serviço.' id="desc" required onChange={this.descSaving}/>
-                                    <button onClick={this.saveDatas}>Enviar</button>
+                                    <button>Enviar</button>
                                 </form>
                         </div>
                     </div>

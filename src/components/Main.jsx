@@ -19,8 +19,8 @@ function Main() {
     <main className="main">
         
         <LandingPage functionScrollToCards={scrollToCards}/> 
-        <SobreNos/>
         <CardsBox/>
+        <SobreNos/>
         <Acessoria/>
         
     </main>

@@ -47,7 +47,8 @@ function PageTemplates() {
                         Veja alguns templates prontos
                     </h1>
                     <h3>
-                        Não tem certeza em qual modelo escolher? Não se preocupe fale com nossa acessoria <Link style={{ textDecoration: 'none' }} to="/"><button onClick={ () => {
+                        Não tem certeza em qual modelo escolher? Não se preocupe fale com nossa acessoria <Link style={{ textDecoration: 'none' }} to="/">
+                          <button onClick={ () => {
                            window.scrollBy(0, 2400);
                         }}>Acessoria</button></Link>
                     </h3>
